@@ -23,14 +23,14 @@ monitor;
   wtempFahr    = 0;
   wtempcelsius = 0;
   wstatus      = *blanks;
-
+  
   wtempCelsius = %dec(inTempCel:5:2);
 
   // appel
   celsToFahr (wtempCelsius
              :wtempFahr
              :wstatus);
-
+  // le but afficher les °C en °F
   message =    'At '+ %char(wtempCelsius)
              + ' °C ('
              + %Char(wtempFahr)
