@@ -14,8 +14,14 @@ dcl-s w_message char(50);
 monitor;
 
   clear parmDs.ouDs.nomClient;
-  parmDs.ouDs.nomClient =   parmDs.inDs.numClient;
+  if parmDS.ouDS.returnCode = 0;
+    // faire le lien entre le param numClient => nomClient
+    parmDs.ouDs.nomClient =   parmDs.inDs.numClient;
+  else;
+
+  endif;
   
+
                   
 
 on-error *all;
