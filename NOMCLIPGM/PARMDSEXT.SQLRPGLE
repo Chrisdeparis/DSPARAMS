@@ -1,7 +1,7 @@
 **free
 ctl-opt option(*srcstmt) dftactgrp(*No);
 
-/copy AADOJO/qcopsrc,parmCLIDS
+/copy MILFORT/qcopsrc,parmCLIDS
 
 dcl-pi *n;
   // paremeter list = un seul élément
@@ -15,6 +15,7 @@ monitor;
 
   clear parmDs.ouDs.nomClient;
   parmDs.ouDs.nomClient =   parmDs.inDs.numClient;
+  
                   
 
 on-error *all;
