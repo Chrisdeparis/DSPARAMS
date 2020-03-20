@@ -35,8 +35,8 @@ monitor;
 
     w_message = 'parmDs : numClient ('
               + %char(parmDs.inDs.numClient)
-              + ') + et('
-              + ') nomClient => ('
+              + ') + et'
+              + ' nomClient => ('
               + %char(parmDs.ouDs.nomClient)
               + ')';
 
